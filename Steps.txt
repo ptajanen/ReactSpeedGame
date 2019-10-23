@@ -1,0 +1,48 @@
+1. npx create-react-app speedgame
+2. clean application
+3. connect with github
+4.plan your app and think what component you need?
+	- by default we go with class component
+	- you can choose also to use useState hook
+5. Create UI
+	- circles
+	- buttons
+	- hidden popup window (.css display:hidden)
+6. Make Circle component clickable
+7. Prepare functions for Start and Stop Buttons(startHandler, stopHandler)
+8. Use default states: counter: 0; GameOver: false
+
+Components : Circle, GameOver,Score ->App.js ->index.js
+
+class App extends Component {
+state = {
+showGameOver: false
+};
+gameOverHandler = () => {
+this.setState({
+showGameOver:true
+});
+}
+
+{this.state.showGameOver && <GameOver score={this.state.score} />}
+
+
+
+muista taustablokkiin text-align etc popuppia varten
+
+If you want circle be clickable, but it is a component and onClick does not work?!
+Circle.js
+<div onClick={this.props.click}></div>
+
+App.js
+<Circle click={this.clickHandler}/>
+
+CircleButtoneita on 4 App.jssä, 
+
+class App extends Component {
+state= {
+current:0,
+score:0,
+rounds:0,
+showGameOver:false
+} 

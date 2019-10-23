@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  }
+
+#button1 {
+  background-color: #4CAF50;
+}
+#button2 {
+  background-color: rgb(99, 1, 1);
+}

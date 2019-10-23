@@ -1,0 +1,25 @@
+
+.circle {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;    
+    border-radius: 50%;
+    background-color:rgb(99, 1, 1);
+    box-shadow: 0 0 3px oldlace;
+}
+
+.number {
+    font-size: 60px;
+    }
+
+.Circle:active {
+    box-shadow: inset 0 0 3px 2px oldlace;
+}
+
+div.Circle.active {
+    background-color:rgb(99, 1, 1);
+    box-shadow: 0px 0px 15px oldlace;
+}
+
